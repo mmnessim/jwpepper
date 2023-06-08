@@ -16,9 +16,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>JW Pepper String Orchestra Catalogue</h1>
-        <Link href={'/pages/searchbycomposer'}>Search by Composer</Link>
-        <LevelSelector />
+        <p>
+          This project is a searchable catalogue of string orchestra works on JWPepper. I scraped some basic data about these works using Python and BeautifulSoup, then compiled the information into a .json file. This webapp provides several different ways of searching through these works.
+        </p>
       </main>
     </>
   )
