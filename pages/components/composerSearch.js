@@ -30,7 +30,7 @@ export function ComposerSearch() {
     const handleDisplayExact = (array) => {
         //reset array before repopulating each time
         displayExact = []; 
-        if (!exact[0]) {
+        if (exact.length = 0) {
             displayExact.push(<li>No exact results</li>)
         } else {
             for (let i = 0; i < array.length; i++) {
@@ -43,7 +43,7 @@ export function ComposerSearch() {
     const handleDisplayPartial = (array) => {
         //reset array before repopulating each time
         displayPartial = []; 
-        if (!partial[0]) {
+        if (partial.length) {
             displayPartial.push(<li>No partial results</li>)
         } else {
             for (let i = 0; i < array.length; i++) {
