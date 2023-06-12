@@ -43,7 +43,7 @@ export function ComposerSearch() {
     const handleDisplayPartial = (array) => {
         //reset array before repopulating each time
         displayPartial = []; 
-        if (partial.length) {
+        if (partial.length === 0) {
             displayPartial.push(<li>No partial results</li>)
         } else {
             for (let i = 0; i < array.length; i++) {
