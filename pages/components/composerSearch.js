@@ -34,7 +34,7 @@ export function ComposerSearch() {
             displayExact.push(<li>No exact results</li>)
         } else {
             for (let i = 0; i < array.length; i++) {
-                displayExact.push(<li>{array[i].title} by {array[i].composer}: {array[i].level} </li>)
+                displayExact.push(<li key={i}>{array[i].title} by {array[i].composer}: {array[i].level} </li>)
             }
         }
       }
@@ -47,7 +47,7 @@ export function ComposerSearch() {
             displayPartial.push(<li>No partial results</li>)
         } else {
             for (let i = 0; i < array.length; i++) {
-                displayPartial.push(<li>{array[i].title} by {array[i].composer}: {array[i].level} </li>)
+                displayPartial.push(<li key={i}>{array[i].title} by {array[i].composer}: {array[i].level} </li>)
             }
         }
       }
@@ -60,11 +60,15 @@ export function ComposerSearch() {
             <button onClick={handleSearch}>Search</button> 
             <div>
                 <h3>Exact Matches: </h3>
+                <div>
                 {displayExact}
+                </div>
             </div>
             <div>
                 <h3>Partial Matches: </h3>
+                <div>
                 {displayPartial}
+                </div>
             </div>
             <ComposerDisplay 
             exact={exact}

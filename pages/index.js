@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <p>
+        <p className='container'>
           This project is a searchable catalogue of string orchestra works on JWPepper. I scraped some basic data about these works using Python and BeautifulSoup, then compiled the information into a .json file. This webapp provides several different ways of searching through these works.
         </p>
       </main>
