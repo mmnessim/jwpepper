@@ -18,16 +18,13 @@ const partialMatcher = (title) => {
             resultsArray.push(dataArray[i])
         }
     }
-    console.log(resultsArray)
+    //console.log(resultsArray)
     return resultsArray;
 }
 
 export default function Handler(req, res) {
-    var composer = req.query.title
-    let result = titleFinder(composer);
-    let result2 = partialMatcher(composer);
-    if (result.length === 0 && result2.length === 0) {
-        res.send({'message': 'No results found'})
-    }
+    var title = req.query.title
+    let result = titleFinder(title);
+    let result2 = partialMatcher(title);
     res.send({exact: result, partial: result2});
 }

@@ -18,7 +18,7 @@ const partialMatcher = (composer) => {
             resultsArray.push(dataArray[i])
         }
     }
-    console.log(resultsArray)
+    //console.log(resultsArray)
     return resultsArray;
 }
 
