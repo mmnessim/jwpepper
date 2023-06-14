@@ -1,6 +1,8 @@
 body {
   text-align: center;
   margin: auto;
+  background-color: azure;
+  color:rgb(12, 12, 75);
 }
 
 .btn:hover {

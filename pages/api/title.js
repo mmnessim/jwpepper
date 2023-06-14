@@ -14,7 +14,7 @@ const titleFinder = (title) => {
 const partialMatcher = (title) => {
     let resultsArray = [];
     for (let i = 0; i < dataArray.length; i++) {
-        if (dataArray[i].title.toLowerCase().includes(title)) {
+        if (dataArray[i].title.toLowerCase().includes(title.toLowerCase())) {
             resultsArray.push(dataArray[i])
         }
     }

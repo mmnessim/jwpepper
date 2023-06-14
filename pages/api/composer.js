@@ -14,7 +14,7 @@ const composerFinder = (composer) => {
 const partialMatcher = (composer) => {
     let resultsArray = [];
     for (let i = 0; i < dataArray.length; i++) {
-        if (dataArray[i].composer.toLowerCase().includes(composer)) {
+        if (dataArray[i].composer.toLowerCase().includes(composer.toLowerCase())) {
             resultsArray.push(dataArray[i])
         }
     }
