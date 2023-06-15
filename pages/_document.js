@@ -1,6 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { Header } from './components/document/header'
-import { NavBar } from './components/document/nav'
+import { Header } from '@/components/document/header'
+import { NavBar } from '@/components/document/nav'
 
 export default function Document() {
   return (

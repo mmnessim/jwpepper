@@ -1,4 +1,4 @@
-import { TitleSearch } from "../components/titleSearch";
+import { TitleSearch } from "@/components/titleSearch";
 
 export default function Title() {
     return(

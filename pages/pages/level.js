@@ -1,4 +1,4 @@
-import { LevelSelector } from "../components/levelselector";
+import { LevelSelector } from "@/components/levelselector";
 
 export default function Level() {
     return (
